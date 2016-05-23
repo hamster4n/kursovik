@@ -45,7 +45,7 @@ public abstract class Product {
         this.price = price;
     }
 
-    public  abstract List<Product> findByType(List<Product> products, String type);
+    public abstract List<Product> findByType(List<Product> products, String type);
 
 
 }
