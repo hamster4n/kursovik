@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Hamster4n.
  */
-public class Product {
+public abstract class Product {
     private int productID;
     private String name;
     private int price;
@@ -45,11 +45,7 @@ public class Product {
         this.price = price;
     }
 
-    public  static List<Product> findByType(List<Product> products, String type){
-        List<Product> results = new ArrayList<>();
-        System.out.println("сработал метод класса Product");
-        return results;
-    }
+    public  abstract List<Product> findByType(List<Product> products, String type);
 
 
 }

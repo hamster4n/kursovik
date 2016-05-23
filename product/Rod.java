@@ -47,7 +47,7 @@ public class Rod extends Product{
     }
 
     @Override
-    public static List<Product> findByType(List<Product> products, String type) {
+    public List<Product> findByType(List<Product> products, String type) {
         List<Product> results = new ArrayList<>();
 
         //тут реализация метода
