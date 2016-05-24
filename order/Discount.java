@@ -1,5 +1,7 @@
 package kursovik.order;
 
+import java.io.IOException;
+
 /**
  * Created by Hamster4n.
  */
@@ -17,13 +19,13 @@ public class Discount { //discount by summ
         else if (price > 5000 && price <= 10000)
             dis = price * 0.35;
         else
-          dis = price * 0.5;
-        amt= price - dis;
+            dis = price * 0.5;
+        amt = price - dis;
 
-  }     
+    }
 
-    public static void main(String args[])throws IOException {
-        Discount ob=new Discount();
+    public static void main(String args[]) throws IOException {
+        Discount ob = new Discount();
         ob.discount();
     }
 }
