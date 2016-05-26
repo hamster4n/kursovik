@@ -23,6 +23,19 @@ public class Discount { //discount by summ
         amt = price - dis;
 
     }
+    
+     void discountByQuantity() {
+        if (quantity <= 2)
+            dis = 0;
+            //offer goods (Y/N)
+            //addQuantity()
+        else if (quantity > 2 && quantity <= 5)
+            dis = price * 0.05;
+        else if (quantity > 5 && quantity <= 10)
+            dis = price * 0.1;
+        else
+            dis = price * 0.5;
+        amt = price - dis;
 
     public static void main(String args[]) throws IOException {
         Discount ob = new Discount();
