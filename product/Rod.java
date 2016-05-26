@@ -8,17 +8,18 @@ import java.util.List;
  */
 public class Rod extends Product{
     private String rodType;
-    private int kastingMin;
-    private int kastingMax;
+    private int castingMin;
+    private int castingMax;
+    private static final String category = "Rod";
 
     public Rod() {
     }
 
-    public Rod(int productID, String name, int price, String rodType, int kastingMin, int kastingMax) {
+    public Rod(int productID, String name, int price, String rodType, int castingMin, int castingMax) {
         super(productID, name, price);
         this.rodType = rodType;
-        this.kastingMin = kastingMin;
-        this.kastingMax = kastingMax;
+        this.castingMin = castingMin;
+        this.castingMax = castingMax;
     }
 
 
@@ -30,28 +31,24 @@ public class Rod extends Product{
         this.rodType = rodType;
     }
 
-    public int getKastingMin() {
-        return kastingMin;
+    public int getCastingMin() {
+        return castingMin;
     }
 
-    public void setKastingMin(int kastingMin) {
-        this.kastingMin = kastingMin;
+    public void setCastingMin(int castingMin) {
+        this.castingMin = castingMin;
     }
 
-    public int getKastingMax() {
-        return kastingMax;
+    public int getCastingMax() {
+        return castingMax;
     }
 
-    public void setKastingMax(int kastingMax) {
-        this.kastingMax = kastingMax;
+    public void setCastingMax(int castingMax) {
+        this.castingMax = castingMax;
     }
 
-    @Override
-    public  List<Product> findByType(List<Product> products, String type) {
-        List<Product> results = new ArrayList<>();
-
-        //тут реализация метода
-        System.out.println("сработал метод класса Rod");
-        return results;
+    public String getCategory() {
+        return category;
     }
+
 }
