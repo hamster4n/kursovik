@@ -13,12 +13,6 @@ public class Runner {
     public static void main(String[] args) {
         List<Product> products = createProducts();
 
-        List<Product> productsByType = Product.findByType(products, "spinning");
-        System.out.println("type spinnings: " + productsByType);
-
-
-
-
     }
 
     public static List<Product> createProducts(){
