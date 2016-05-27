@@ -1,54 +1,54 @@
 package kursovik.product;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Hamster4n.
  */
 public class Rod extends Product{
-    private String rodType;
-    private int castingMin;
-    private int castingMax;
-    private static final String category = "Rod";
+    private EnumRodType rodType;
+    private int kastingMin;
+    private int kastingMax;
 
     public Rod() {
     }
 
-    public Rod(int productID, String name, int price, String rodType, int castingMin, int castingMax) {
+    public Rod(int productID, String name, int price, EnumRodType rodType, int kastingMin, int kastingMax) {
         super(productID, name, price);
         this.rodType = rodType;
-        this.castingMin = castingMin;
-        this.castingMax = castingMax;
+        this.kastingMin = kastingMin;
+        this.kastingMax = kastingMax;
     }
 
-
-    public String getRodType() {
+    public EnumRodType getRodType() {
         return rodType;
     }
 
-    public void setRodType(String rodType) {
+    public void setRodType(EnumRodType rodType) {
         this.rodType = rodType;
     }
 
-    public int getCastingMin() {
-        return castingMin;
+    public int getKastingMin() {
+        return kastingMin;
     }
 
-    public void setCastingMin(int castingMin) {
-        this.castingMin = castingMin;
+    public void setKastingMin(int kastingMin) {
+        this.kastingMin = kastingMin;
     }
 
-    public int getCastingMax() {
-        return castingMax;
+    public int getKastingMax() {
+        return kastingMax;
     }
 
-    public void setCastingMax(int castingMax) {
-        this.castingMax = castingMax;
+    public void setKastingMax(int kastingMax) {
+        this.kastingMax = kastingMax;
     }
 
-    public String getCategory() {
-        return category;
+    @Override
+    public String toString() {
+        return "Rod{" +
+                "rodType=" + rodType +
+                ", kastingMin=" + kastingMin +
+                ", kastingMax=" + kastingMax +
+                '}';
     }
-
 }
