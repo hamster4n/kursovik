@@ -11,11 +11,11 @@ public class test {
 
 
     //вычисляем общую стоимость товара в корзине
-    int priceProductList = productList.getPriceProductList;
+   // int priceProductList = productList.getPriceProductList;
     //вычисляем размер скидки
-    int discount = priceProductList.addDiscount;
+   // int discount = priceProductList.addDiscount;
     // выводим на печать счёт на оплату
-    printOrder(List<Product> productList, priceProductList, discount);
+    //printOrder(List<Product> productList, priceProductList, discount);
 
 
 
