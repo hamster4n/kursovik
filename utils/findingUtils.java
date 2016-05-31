@@ -1,9 +1,6 @@
 package kursovik.utils;
 
-import kursovik.product.Bait;
-import kursovik.product.Coil;
-import kursovik.product.Product;
-import kursovik.product.Rod;
+import kursovik.product.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,30 +24,29 @@ public final class FindingUtils {
         return result;
     }
 
-    public static List<Rod> findByRodType(List<Product> products, String rodType) { // String rodType - TILL BE READY ENUM ROD_TYPE!!!!
-        List<Product> productsRods = findByCategory(products, "Rod" /*string ROD (Category of product)*/);
+    public static List<Rod> findByRodType(List<Product> products, String rodType) { // Enum RodType - COMPILATION OK! :)
+        List<Product> productsRods = findByCategory(products, "Rod");
         List<Rod> rods = new ArrayList<>();
-        for (Product prod : productsRods) {
-            if (prod instanceof Rod) {  // Нисхідне перетворення типів
-                rods.add((Rod) prod);
+        for (Product product : productsRods) {
+            if (product instanceof Rod) {  // Нисхідне перетворення типів
+                rods.add((Rod) product);
             }
         }
         List<Rod> result = new ArrayList<>();
-
         for (Rod rod : rods) {
-            if (rod.getRodType().equals(rodType)) {
+            if (rod.getRodType().equals(rodType)) { // Перевірить коректність роботи, хз чи правильно робитиме.
                 result.add(rod);
             }
         }
         return result;
     }
 
-    public static List<Rod> findByMinKasting(List<Product> products, int castingMin) {
+    public static List<Rod> findByMinСasting(List<Product> products, int castingMin) {
         List<Product> productsRods = findByCategory(products, "Rod" /*ROD instead Category*/);
         List<Rod> rods = new ArrayList<>();
-        for (Product prod : productsRods) {     // Нисхідне перетворення типів
-            if (prod instanceof Rod) {  // Нисхідне перетворення типів
-                rods.add((Rod) prod);
+        for (Product product : productsRods) {     // Нисхідне перетворення типів
+            if (product instanceof Rod) {  // Нисхідне перетворення типів
+                rods.add((Rod) product);
             }
         }
         List<Rod> result = new ArrayList<>();
@@ -65,9 +61,9 @@ public final class FindingUtils {
     public static List<Rod> findByMaxCasting(List<Product> products, int castingMax) {
         List<Product> productsRods = findByCategory(products, "Rod" /*ROD*/);
         List<Rod> rods = new ArrayList<>();
-        for (Product prod : productsRods) {     // Нисхідне перетворення типів
-            if (prod instanceof Rod) {  // Нисхідне перетворення типів
-                rods.add((Rod) prod);
+        for (Product product : productsRods) {     // Нисхідне перетворення типів
+            if (product instanceof Rod) {  // Нисхідне перетворення типів
+                rods.add((Rod) product);
             }
         }
         List<Rod> result = new ArrayList<>();
@@ -82,9 +78,9 @@ public final class FindingUtils {
     public static List<Coil> findByCoilType(List<Product> products, String coilType) {
         List<Product> productsCoils = findByCategory(products, "Coil" /*COIL - String in Product*/);
         List<Coil> coils = new ArrayList<>();
-        for (Product prod : productsCoils) {
-            if (prod instanceof Coil) {// Нисхідне перетворення типів
-                coils.add((Coil) prod);
+        for (Product product : productsCoils) {
+            if (product instanceof Coil) {// Нисхідне перетворення типів
+                coils.add((Coil) product);
             }
         }
         List<Coil> result = new ArrayList<>();
@@ -99,9 +95,9 @@ public final class FindingUtils {
     public static List<Coil> findByPresenceSecondSpool(List<Product> products, boolean isSecondSpoolHas) {
         List<Product> productsCoils = findByCategory(products, "Coil" /*COIL - String in Product*/);
         List<Coil> coils = new ArrayList<>();
-        for (Product prod : productsCoils) {     // Нисхідне перетворення типів
-            if (prod instanceof Coil) {// Нисхідне перетворення типів
-                coils.add((Coil) prod);
+        for (Product product : productsCoils) {     // Нисхідне перетворення типів
+            if (product instanceof Coil) {// Нисхідне перетворення типів
+                coils.add((Coil) product);
             }
         }
         List<Coil> result = new ArrayList<>();
@@ -114,11 +110,11 @@ public final class FindingUtils {
     }
 
     public static List<Coil> findByNumberOfBearings(List<Product> products, int numberOfBearings) {
-        List<Product> productsCoils = findByCategory(products, "Coil" /*COIL - String in Product*/);
+        List<Product> productsCoils = findByCategory(products, "Coil");
         List<Coil> coils = new ArrayList<>();
-        for (Product prod : productsCoils) {     // Нисхідне перетворення типів
-            if (prod instanceof Coil) {// Нисхідне перетворення типів
-                coils.add((Coil) prod);
+        for (Product product : productsCoils) {     // Нисхідне перетворення типів
+            if (product instanceof Coil) {// Нисхідне перетворення типів
+                coils.add((Coil) product);
             }
         }
         List<Coil> result = new ArrayList<>();
@@ -130,8 +126,26 @@ public final class FindingUtils {
         return result;
     }
 
+    public static List<Bait> findByBaitType(List<Product> products, String baitType){
+        List<Product> productsBaits = findByCategory(products, "Bait");
+        List<Bait> baits = new ArrayList<>();
+        for (Product product : productsBaits) {     // Нисхідне перетворення типів
+            if (product instanceof Bait) {
+                baits.add((Bait) product);
+            }
+        }
+        List<Bait> result = new ArrayList<>();
+        for (Bait bait: baits){
+            if (bait.getBaitType().equals(baitType)){
+                result.add(bait);
+            }
+        }
+        return result;
+    }
+
+
     public static List<Bait> findByColor(List<Product> products, String color) {
-        List<Product> productsBaits = findByCategory(products, "Bait" /*Bait*/);
+        List<Product> productsBaits = findByCategory(products, "Bait");
         List<Bait> baits = new ArrayList<>();
         for (Product prod : productsBaits) {     // Нисхідне перетворення типів
             if (prod instanceof Bait) {
@@ -148,7 +162,7 @@ public final class FindingUtils {
     }
 
     public static List<Bait> findByWeight(List<Product> products, int weight) {
-        List<Product> productsBaits = findByCategory(products, "Bait" /*Bait*/);
+        List<Product> productsBaits = findByCategory(products, "Bait");
         List<Bait> baits = new ArrayList<>();
         for (Product prod : productsBaits) {     // Нисхідне перетворення типів
             if (prod instanceof Bait) {
@@ -172,5 +186,31 @@ public final class FindingUtils {
             }
         }
         return productWithId;
+    }
+
+    public static List <Product> findByPrice(List<Product> products, int price){
+        List<Product> result = new ArrayList<>();
+        for (Product product:products){
+            if (product.getPrice()> price){
+                result.add(product);
+            }
+        }
+        return result;
+    }
+
+    public static List<Product> findProductsFromMinPriceToMax (List<Product> products, int minPrice, int maxPrice){
+        List<Product> result = new ArrayList<>();
+        for (Product product:products){
+            if (product.getPrice()>= minPrice && product.getPrice()<= maxPrice){
+                result.add(product);
+            }
+        }
+        return result;
+    }
+
+    public static List<Product> findByTypeAndPrice(List<Product> products, int price, String category){
+        List<Product> productsType = findByCategory(products, category);
+        List<Product> result = findByPrice(productsType, price);
+        return result;
     }
 }
