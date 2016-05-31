@@ -1,8 +1,5 @@
 package kursovik.product;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Created by Hamster4n.
  */
@@ -45,7 +42,14 @@ public abstract class Product {
         this.price = price;
     }
 
+    public abstract String getCategory(); // This is important!
 
-
-
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productID=" + productID +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

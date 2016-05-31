@@ -5,50 +5,56 @@ package kursovik.product;
  * Created by Hamster4n.
  */
 public class Rod extends Product{
-    private EnumRodType rodType;
-    private int kastingMin;
-    private int kastingMax;
+    private RodType rodType;
+    private int castingMin;
+    private int castingMax;
+    private final String category = "Rod";
 
     public Rod() {
     }
 
-    public Rod(int productID, String name, int price, EnumRodType rodType, int kastingMin, int kastingMax) {
+    public Rod(int productID, String name, int price, RodType rodType, int kastingMin, int kastingMax) {
         super(productID, name, price);
         this.rodType = rodType;
-        this.kastingMin = kastingMin;
-        this.kastingMax = kastingMax;
+        this.castingMin = kastingMin;
+        this.castingMax = kastingMax;
     }
 
-    public EnumRodType getRodType() {
+    public RodType getRodType() {
         return rodType;
     }
 
-    public void setRodType(EnumRodType rodType) {
+    public void setRodType(RodType rodType) {
         this.rodType = rodType;
     }
 
-    public int getKastingMin() {
-        return kastingMin;
+    public int getCastingMin() {
+        return castingMin;
     }
 
-    public void setKastingMin(int kastingMin) {
-        this.kastingMin = kastingMin;
+    public void setCastingMin(int castingMin) {
+        this.castingMin = castingMin;
     }
 
-    public int getKastingMax() {
-        return kastingMax;
+    public int getCastingMax() {
+        return castingMax;
     }
 
-    public void setKastingMax(int kastingMax) {
-        this.kastingMax = kastingMax;
+    public void setCastingMax(int castingMax) {
+        this.castingMax = castingMax;
+    }
+
+    @Override
+    public String getCategory() {
+        return category;
     }
 
     @Override
     public String toString() {
-        return "Rod{" +
-                "rodType=" + rodType +
-                ", kastingMin=" + kastingMin +
-                ", kastingMax=" + kastingMax +
-                '}';
+        return "Rod{" +" Name: "+ getName()+
+                rodType + ", price = "+ getPrice()+
+                ", castingMin - " + castingMin +
+                ", castingMax - " + castingMax +
+                '}'+'\n';
     }
 }

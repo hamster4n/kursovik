@@ -4,25 +4,26 @@ package kursovik.product;
  * Created by Hamster4n.
  */
 public class Bait extends Product {
-    private EnumBaitType baitType;
+    private BaitType baitType;
     private String color;
     private int weight;
+    private final String category = "Bait";
 
     public Bait() {
     }
 
-    public Bait(int productID, String name, int price, EnumBaitType baitType, String color, int weight) {
+    public Bait(int productID, String name, int price, BaitType baitType, String color, int weight) {
         super(productID, name, price);
         this.baitType = baitType;
         this.color = color;
         this.weight = weight;
     }
 
-    public EnumBaitType getBaitType() {
+    public BaitType getBaitType() {
         return baitType;
     }
 
-    public void setBaitType(EnumBaitType baitType) {
+    public void setBaitType(BaitType baitType) {
         this.baitType = baitType;
     }
 
@@ -42,12 +43,17 @@ public class Bait extends Product {
         this.weight = weight;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+
     @Override
     public String toString() {
-        return "Bait{" +
-                "baitType=" + baitType +
-                ", color='" + color + '\'' +
-                ", weight=" + weight +
-                '}';
+        return "Bait{" + "Name:"+ getName()+
+                baitType + ", price = " + getPrice()+
+                ", color - " + color + '\'' +
+                ", weight - " + weight +
+                '}'+'\n';
     }
 }

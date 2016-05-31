@@ -4,25 +4,26 @@ package kursovik.product;
  * Created by Hamster4n.
  */
 public class Coil extends Product{
-    private EnumCoilType coilType;
+    private CoilType coilType;
     private int numberOfBearings;
-    private boolean isSecondSpoolHave;
+    private boolean isSecondSpoolHas;
+    private final String category = "Coil";
 
     public Coil() {
     }
 
-    public Coil(int productID, String name, int price, EnumCoilType coilType, int numberOfBearings, boolean isSecondSpoolHave) {
+    public Coil(int productID, String name, int price, CoilType coilType, int numberOfBearings, boolean isSecondSpoolHas) {
         super(productID, name, price);
         this.coilType = coilType;
         this.numberOfBearings = numberOfBearings;
-        this.isSecondSpoolHave = isSecondSpoolHave;
+        this.isSecondSpoolHas = isSecondSpoolHas;
     }
 
-    public EnumCoilType getCoilType() {
+    public CoilType getCoilType() {
         return coilType;
     }
 
-    public void setCoilType(EnumCoilType coilType) {
+    public void setCoilType(CoilType coilType) {
         this.coilType = coilType;
     }
 
@@ -34,20 +35,26 @@ public class Coil extends Product{
         this.numberOfBearings = numberOfBearings;
     }
 
-    public boolean isSecondSpoolHave() {
-        return isSecondSpoolHave;
+    public boolean getIsSecondSpoolHas() {
+        return isSecondSpoolHas;
     }
 
-    public void setSecondSpoolHave(boolean secondSpoolHave) {
-        isSecondSpoolHave = secondSpoolHave;
+    public void setSecondSpoolHas(boolean secondSpoolHas) {
+        isSecondSpoolHas = secondSpoolHas;
+    }
+
+    public String getCategory() {
+        return category;
     }
 
     @Override
     public String toString() {
-        return "Coil{" +
-                "coilType=" + coilType +
-                ", numberOfBearings=" + numberOfBearings +
-                ", isSecondSpoolHave=" + isSecondSpoolHave +
-                '}';
+        return "Coil{" + "Name: " + getName()+
+                coilType + ", price = " + getPrice()+
+                ", number of bearings - " + numberOfBearings +
+                ", has second spool: " + isSecondSpoolHas +
+                '}'+'\n';
     }
+
+
 }
