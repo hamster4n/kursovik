@@ -8,9 +8,9 @@ import java.util.List;
 /**
  * Created by Администратор on 26.05.2016.
  */
-public final class FindingUtils {
+public final class findingUtils {
 
-    private FindingUtils() {
+    private findingUtils() {
 
     }
 
