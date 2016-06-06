@@ -15,6 +15,6 @@ public enum CoilType {
 
     @Override
     public String toString() {
-        return ", coilType - "+ coilType;
+        return coilType;
     }
 }
