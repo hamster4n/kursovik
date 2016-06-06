@@ -38,11 +38,11 @@ public class RunnerIOUtils {
 //        List<Product> products = createProducts2();
 //        ProductIOUtils.outputProductsIntoFile(products, FILE_NAME_OUTPUT);
 
-        //Тест №4 на запись в бинарный файл - NotSerializableException
+        //Тест №4 на запись в бинарный файл - пройден
 //        List<Product> products = createProducts2();
 //        ProductIOUtils.outputBinaryProductsIntoFile(products, FILE_NAME_OUTPUT_BIN);
 
-        //Тест №5 на чтение из бинарного файла - NotSerializableException
+        //Тест №5 на чтение из бинарного файла - пройден
 //        System.out.println(ProductIOUtils.readBinaryProductsFromFile(FILE_NAME_OUTPUT_BIN));
 
     }
