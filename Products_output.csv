@@ -1,0 +1,24 @@
+rod;1;Globus;1400;Spinning;10;40
+rod;2;BlueBird;1500;Spinning;1;5
+rod;3;WhiteBird;700;Spinning;1;5
+rod;4;New Hanter 5m;500;Fishing rod;5;10
+rod;5;New Hanter 4m;400;Fishing rod;5;10
+rod;6;Trabooko;4500;Fishing rod;2;8
+rod;7;Daiwa Extra Heavy 3,4m;4500;feeder;20;150
+rod;8;Daiwa Heavy 3,9m;3900;feeder;20;100
+rod;9;Korum peaker 2,05m;1200;feeder;20;40
+coil;10;Daiwa Megaforce 2500;1400;InertialessCoil;6;true
+coil;11;Daiwa 12 Catalina 4500;21000;InertialessCoil;10;true
+coil;12;Lineaeffe Vigor Pegaso FD 20;194;InertialessCoil;1;false
+coil;13;Lineaeffe Colorado 101;980;Multiplier Coil;1;false
+coil;14;Daiwa Millionaire S250;2560;Multiplier Coil;3;false
+coil;15;Dragon SHS200il;3875;Multiplier Coil;11;false
+bait;16;Usami Kama 70F;89;Wobbler;green;9
+bait;17;Yo-Zuri 3DS Minnow 70SP;269;Wobbler;silver;7
+bait;18;Imakatsu Buzz Bill Minnow;808;Wobbler;yellow;11
+bait;19;Blue Fox Vibrax Fluorescent;126;Spoon;gold;13
+bait;20;Balzer Coloner Classic Standard Uni;44;Spoon;gold;5
+bait;21;Mepps Aglis Long;59;Spoon;golden;6
+bait;22;Twister Dragon Dancer 1.5;67;Silicon;silver;0
+bait;23;Nomura Glitter Rib Worm 4;87;Silicon;purple;0
+bait;24;Keitech Crazy Flapper 3.6;130;Silicon;green;0
