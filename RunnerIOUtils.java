@@ -34,9 +34,9 @@ public class RunnerIOUtils {
 //        System.out.println(ProductIOUtils.convertProductToCsv(product2));
 
 
-        //Тест №3  на запись списка products в файл csv
+        //Тест №3  на запись списка products в файл csv - пройден
 //        List<Product> products = createProducts2();
-//        ProductIOUtils.outputProductIntoFile(products, FILE_NAME_OUTPUT); // ругается на первый аргумент
+//        ProductIOUtils.outputProductsIntoFile(products, FILE_NAME_OUTPUT);
 
         //Тест №4 на запись в бинарный файл - NotSerializableException
 //        List<Product> products = createProducts2();
