@@ -1,9 +1,11 @@
 package kursovik.product;
 
+import java.io.Serializable;
+
 /**
  * Created by Hamster4n.
  */
-public class Coil extends Product{
+public class Coil extends Product implements Serializable{
     private CoilType coilType;
     private int numberOfBearings;
     private boolean isSecondSpoolHas;

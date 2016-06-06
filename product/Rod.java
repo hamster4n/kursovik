@@ -1,10 +1,12 @@
 package kursovik.product;
 
 
+import java.io.Serializable;
+
 /**
  * Created by Hamster4n.
  */
-public class Rod extends Product{
+public class Rod extends Product implements Serializable{
     private RodType rodType;
     private int castingMin;
     private int castingMax;
