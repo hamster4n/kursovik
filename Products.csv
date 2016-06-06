@@ -1,0 +1,24 @@
+rod;1;Globus;1400;SPINNING;10;40
+rod;2;BlueBird;1500;SPINNING;1;5
+rod;3;WhiteBird;700;SPINNING;1;5
+rod;4;New Hunter 5m;500;FISHING_ROD;5;10
+rod;5;New Hunter 4m;400;FISHING_ROD;5;10
+rod;6;Trabooko;4500;FISHING_ROD;2;8
+rod;7;Daiwa Extra Heavy 3,4m;4500;FEEDER;20;150
+rod;8;Daiwa Heavy 3,9m;3900;FEEDER;20;100
+rod;9;Korum peaker 2,05m;1200;FEEDER;20;40
+coil;10;Daiwa Megaforce 2500;1400;INERTIALLESS_COIL;6;true
+coil;11;Daiwa 12 Catalina 4500;21000;INERTIALLESS_COIL;10;true
+coil;12;Lineaeffe Vigor Pegaso FD 20;194;INERTIALLESS_COIL;1;false
+coil;13;Lineaeffe Colorado 101;980;MULTYPLIER_COIL;1;false
+coil;14;Daiwa Millionaire S250;2560;MULTYPLIER_COIL;3;false
+coil;15;Dragon SHS200il;3875;MULTYPLIER_COIL;11;false
+bait;16;Usami Kama 70F;89;WOBBLER;green;9
+bait;17;Yo-Zuri 3DS Minnow 70SP;269;WOBBLER;silver;7
+bait;18;Imakatsu Buzz Bill Minnow;808;WOBBLER;yellow;11
+bait;19;Blue Fox Vibrax Fluorescent;126;SPOON;gold;13
+bait;20;Balzer Coloner Classic Standard Uni;44;SPOON;gold;5
+bait;21;Mepps Aglis Long;59;SPOON;golden;6
+bait;22;Twister Dragon Dancer 1.5;67;SILICON;silver;0
+bait;23;Nomura Glitter Rib Worm 4;87;SILICON;purple;0
+bait;24;Keitech Crazy Flapper 3.6;130;SILICON;green;0
