@@ -1,9 +1,11 @@
 package kursovik.product;
 
+import java.io.Serializable;
+
 /**
  * Created by Hamster4n.
  */
-public class Bait extends Product {
+public class Bait extends Product implements Serializable{
     private BaitType baitType;
     private String color;
     private int weight;

@@ -20,6 +20,6 @@ public enum BaitType {
 
     @Override
     public String toString() {
-        return " baitType - " + baitType;
+        return baitType;
     }
 }

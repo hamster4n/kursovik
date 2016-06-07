@@ -16,6 +16,6 @@ public enum RodType {
 
     @Override
     public String toString() {
-        return ", rodType - " + rodType;
+        return rodType;
     }
 }

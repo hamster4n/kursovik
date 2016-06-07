@@ -43,6 +43,15 @@ public class test {
     public int discountByQuantity(List<Product> productList){
         int discount = 0;
         //дальше логика расчёта скидки
+        if (productList <= 2000)
+            discount = productList * 0.05;
+        else if (productList > 2000 && productList <= 5000)
+            discount = productList * 0.1;
+        else if (productList > 5000 && productList <= 10000)
+            discount = productList * 0.15;
+        else
+            discount = productList * 0.2;
+        amt = productList - discount;
 
         return discount;
     }
