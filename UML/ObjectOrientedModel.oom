@@ -4123,8 +4123,8 @@ Shadow=0</a:DisplayPreferences>
 </o:Attribute>
 <o:Attribute Id="o65">
 <a:ObjectID>C44C5E0A-00DA-4478-91BD-A2377C6D46D2</a:ObjectID>
-<a:Name>kastingMin</a:Name>
-<a:Code>kastingMin</a:Code>
+<a:Name>castingMin</a:Name>
+<a:Code>castingMin</a:Code>
 <a:CreationDate>1463303110</a:CreationDate>
 <a:Creator>1</a:Creator>
 <a:ModificationDate>1463303118</a:ModificationDate>
@@ -4134,8 +4134,8 @@ Shadow=0</a:DisplayPreferences>
 </o:Attribute>
 <o:Attribute Id="o66">
 <a:ObjectID>BF7F95A0-7F8E-4C67-A21D-A77F778D66D4</a:ObjectID>
-<a:Name>kastingMax</a:Name>
-<a:Code>kastingMax</a:Code>
+<a:Name>castingMax</a:Name>
+<a:Code>castingMax</a:Code>
 <a:CreationDate>1463303126</a:CreationDate>
 <a:Creator>1</a:Creator>
 <a:ModificationDate>1463303131</a:ModificationDate>
